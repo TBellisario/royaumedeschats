@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Component/Header/Header.js';
+import Content from './Component/Content/Content.js';
+import Formulaire from './Component/Formulaire/Formulaire';
+import Tab from './Component/Tab/Tab';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Content />
+        <Tab />
+        <Formulaire />
+        
+      </div>
+    );
+  }
 }
 
 export default App;
