@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Tab.css';
+
 
 export default class Tab extends Component {
     render() {
         return (
+          
+          
+
             <table class="table table-bordered">
+
   <thead>
     <tr>
       <th scope="col">Service</th>
@@ -34,6 +40,7 @@ export default class Tab extends Component {
     </tr>
   </tbody>
 </table>
+
         )
     }
 }

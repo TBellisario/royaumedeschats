@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.png';
 import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Grid, Cell } from 'react-mdl';
 
 console.log(logo); 
 
 class Header extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <div>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Nav>
         <img src={logo} alt="Logo" height='100px' />
         </Nav>
@@ -18,6 +20,9 @@ class Header extends Component {
 
         
     </Navbar>
+
+      </div>
+      
     );
   }
 }
